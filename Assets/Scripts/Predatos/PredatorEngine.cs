@@ -29,10 +29,12 @@ public class PredatorEngine : MonoBehaviour {
     }
 
     void SetFirstState() {
-        currentState = stateList[firstState.GetType()];
-
-        if (currentState == null)
+        if (firstState == null) {
             Debug.LogError("NO FIRST STATE DEFINED!");
+            return;
+        }
+
+        currentState = stateList[firstState.GetType()];
     }
 
     public void AddState<T>() where T : IPredatorState {

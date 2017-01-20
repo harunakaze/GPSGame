@@ -2205,6 +2205,10 @@ GameObject:
   - 114: {fileID: 2095012554}
   - 50: {fileID: 2095012553}
   - 61: {fileID: 2095012552}
+  - 114: {fileID: 2095012560}
+  - 114: {fileID: 2095012559}
+  - 114: {fileID: 2095012558}
+  - 114: {fileID: 2095012561}
   m_Layer: 8
   m_Name: Naga
   m_TagString: Untagged
@@ -2321,7 +2325,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 456da495a47ff5945a30dfec97b3f803, type: 3}
-  m_Color: {r: 0.83823526, g: 0.19723181, b: 0.19723181, a: 1}
+  m_Color: {r: 0.83823526, g: 0.8205524, b: 0.19723181, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &2095012557
@@ -2337,3 +2341,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &2095012558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095012551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7b84db92debaf42bf1a24c6f11b7ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minBeforeMoving: 8.68
+--- !u!114 &2095012559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095012551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e418db1a662e3f47b122a6ce43d2806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minBeforeShooting: 6.52
+--- !u!114 &2095012560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095012551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86703f0f532eefc46babb6346f91400c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstState: {fileID: 2095012559}
+  predatorData: {fileID: 0}
+--- !u!114 &2095012561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095012551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e255e06f362a94a48b8493595319edbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 1
