@@ -1131,6 +1131,7 @@ GameObject:
   - 50: {fileID: 1252046460}
   - 61: {fileID: 1252046459}
   - 114: {fileID: 1252046463}
+  - 114: {fileID: 1252046464}
   m_Layer: 8
   m_Name: Shark
   m_TagString: Untagged
@@ -1276,6 +1277,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: 0.73
   pc: {fileID: 2058168556}
+--- !u!114 &1252046464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252046456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e255e06f362a94a48b8493595319edbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 1
 --- !u!1 &1274870734
 GameObject:
   m_ObjectHideFlags: 0
