@@ -24,6 +24,9 @@ public class CameraMove : MonoBehaviour {
 	}
 	
 	void FixedUpdate() {
+        if (target == null)
+            return;
+
 		Vector3 targetOffset = offset;
 		Vector3 finalPosition = target.position + targetOffset;
 		

@@ -10,8 +10,18 @@ public class PlayerController : MonoBehaviour, IAttackable {
         hitPoints--;
 
         if(hitPoints <= 0) {
-            Debug.Log("DIE");
+            Destroy(gameObject);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if(collision.gameObject.CompareTag("EProj"))
+            OnDamageReceived();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.gameObject.CompareTag("EProj"))
+            OnDamageReceived();
     }
 }
 
