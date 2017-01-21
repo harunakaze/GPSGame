@@ -11,10 +11,15 @@ public class ShootingState : PredatorBaseState {
     }
 
     public override void SUpdate() {
-        Debug.Log(Vector2.Distance(player.position, transform.position));
+        Shoot();
+
         if (Vector2.Distance(player.position, transform.position) >= minBeforeMoving) {
            
             pEngine.SwitchState<ChasingState>();
         }
+    }
+
+    void Shoot() {
+
     }
 }
