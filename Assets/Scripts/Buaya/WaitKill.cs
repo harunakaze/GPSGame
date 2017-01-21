@@ -6,9 +6,15 @@ public class WaitKill : PredatorBaseState {
     public float watchDistance = 10.0f;
 
     private Transform player;
+    private AILerp aiLerp;
 
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        aiLerp = GetComponent<AILerp>();
+    }
+
+    public override void SEnter() {
+        aiLerp.enabled = false;
     }
 
     public override void SUpdate() {
