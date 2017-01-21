@@ -249,6 +249,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &265126548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 265126549}
+  m_Layer: 8
+  m_Name: Satelit
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &265126549
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265126548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1524358580}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &274264709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,8 +2043,13 @@ MonoBehaviour:
   bulletSadisCount: 40
   buletDelay: 2
   buletShootCount: 18
-  buletWait: 2.5
-  buletDelayEvery: 0
+  buletWait: 3
+  buletDelayEvery: 2
+  satelitDelay: 7
+  satelitTime: 25
+  satelitBulet: {fileID: 1063209696833136, guid: 52f66818a55265f4082733f3539b500c,
+    type: 2}
+  satlitShooter: {fileID: 265126549}
   bullet: {fileID: 1571243209263802, guid: 61679630657dfbc4ca41a124cda7f397, type: 2}
   homingBullet: {fileID: 1732027567037996, guid: d5233c608b1f2094b89d36bf2b02ac4f,
     type: 2}
@@ -2117,6 +2150,7 @@ Transform:
   m_LocalScale: {x: 3.4256513, y: 4.265296, z: 1}
   m_Children:
   - {fileID: 1295227960}
+  - {fileID: 265126549}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

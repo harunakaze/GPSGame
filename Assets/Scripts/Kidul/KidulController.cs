@@ -17,6 +17,14 @@ public class KidulController : MonoBehaviour {
     public int buletDelayEvery;
     private int buletCounter = 0;
 
+    // Satelit
+    public float satelitDelay = 7.0f;
+    public float satelitTime = 15.0f;
+    public GameObject satelitBulet;
+    public Transform satlitShooter;
+
+    private Transform player;
+
     public GameObject bullet;
     public GameObject homingBullet;
 
@@ -29,8 +37,11 @@ public class KidulController : MonoBehaviour {
     private bool rotateCenter = false;
 
     void Start() {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
         Invoke("SadisShoot", 10.0f);
         InvokeRepeating("BuletShoot", 0.0f, buletDelay);
+        InvokeRepeating("SatelitShot", 7.0f, satelitTime);
     }
 
     private void Update() {
@@ -57,6 +68,11 @@ public class KidulController : MonoBehaviour {
             CancelInvoke("BuletShoot");
             StartCoroutine(StartBuletAgain());
         }
+    }
+
+    void SatelitShot() {
+        satlitShooter.up = player.position - transform.position;
+        Instantiate(satelitBulet, satlitShooter.position, satlitShooter.rotation);
     }
 
     void SadisShoot() {
