@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e255e06f362a94a48b8493595319edbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 2
+  hitPoints: 10
 --- !u!114 &1734197179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2154,7 +2154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401d93f1ee4fec24fb11703610f12ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletOneCount: 1
+  bulletOneCount: 2
+  bulletTwoCount: 20
   bulletPlace: {fileID: 639045296}
   bullet: {fileID: 1571243209263802, guid: 61679630657dfbc4ca41a124cda7f397, type: 2}
 --- !u!61 &1734197180
@@ -2190,7 +2191,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
 --- !u!212 &1734197184
 SpriteRenderer:
   m_ObjectHideFlags: 0
