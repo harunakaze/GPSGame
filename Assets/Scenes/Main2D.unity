@@ -501,6 +501,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &678931226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 678931227}
+  m_Layer: 8
+  m_Name: ShootBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678931227
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678931226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.003, y: 0.278, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2095012557}
+  m_RootOrder: 0
 --- !u!1 &696747441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,7 +1804,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1829723415}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86703f0f532eefc46babb6346f91400c, type: 3}
   m_Name: 
@@ -2418,7 +2446,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2095012554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2507,10 +2535,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2095012551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.87, y: 1.97, z: 0}
+  m_LocalPosition: {x: -6.135, y: 0.53, z: 0}
   m_LocalScale: {x: 3.4256513, y: 4.265296, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 678931227}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!114 &2095012558
@@ -2525,6 +2554,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minBeforeMoving: 8.68
+  blt: {fileID: 1000014276039666, guid: 386b0864c9dd85d45b62dce44a1d848a, type: 2}
+  shot: {fileID: 678931227}
 --- !u!114 &2095012559
 MonoBehaviour:
   m_ObjectHideFlags: 0
