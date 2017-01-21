@@ -8,23 +8,19 @@ public class ChaseHide : PredatorBaseState {
     [Range(0.0f, 1.0f)]
     public float transparentOpacity = 0.56f;
 
+    public Sprite showed;
+
     private Transform player;
     private AILerp aiLerp;
-    private SpriteRenderer sr;
+    public SpriteRenderer sr;
 
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         aiLerp = GetComponent<AILerp>();
-        sr = GetComponent<SpriteRenderer>();
     }
 
     public override void SEnter() {
         aiLerp.enabled = true;
-
-        Color transparent = sr.color;
-        transparent.a = transparentOpacity;
-
-        sr.color = transparent;
     }
 
     public override void SUpdate() {
@@ -34,9 +30,6 @@ public class ChaseHide : PredatorBaseState {
     }
 
     public override void SExit() {
-        Color fullColor = sr.color;
-        fullColor.a = 1.0f;
-
-        sr.color = fullColor;
+        sr.sprite = showed;
     }
 }
