@@ -19,13 +19,13 @@ public class ShootingState : PredatorBaseState {
     public override void SUpdate() {
         transform.up = player.position - transform.position;
         d = d + Time.deltaTime;
-        Debug.Log(d);
-        if (d%2>=1&&s==true)
+        //Debug.Log(d);
+        if (d%1>=0.5f&&s==true)
         {
             Shoot();
             s = false;
         }
-        else if (d%2<1&&s!=true)
+        else if (d%1<0.5f&&s!=true)
         {
             s = true;
             
