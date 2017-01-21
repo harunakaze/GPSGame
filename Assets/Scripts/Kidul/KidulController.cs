@@ -54,6 +54,10 @@ public class KidulController : MonoBehaviour {
         StartCoroutine(SadisShootCoroutine());
     }
 
+    void StopShooting() {
+        CancelInvoke("BuletShoot");
+    }
+
     IEnumerator SadisShootCoroutine() {
         rotateCenter = true;
         for (int i = 0; i < bulletSadisCount; i++) {

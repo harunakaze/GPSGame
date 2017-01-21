@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212710034040742380}
   - component: {fileID: 58554138325637802}
   - component: {fileID: 50092632390149732}
-  - component: {fileID: 114229599368284070}
+  - component: {fileID: 114435887417443918}
   m_Layer: 10
   m_Name: HomingBullet
   m_TagString: EProj
@@ -77,7 +77,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.54
---- !u!114 &114229599368284070
+--- !u!114 &114435887417443918
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -85,9 +85,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732027567037996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e51c311133de64d44911694cc5a6edfa, type: 3}
+  m_Script: {fileID: 11500000, guid: eb7a2f673aae1624eaac512c8d00245c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startHoming: 0.85
+  homingSpeed: 650
   speed: 350
 --- !u!212 &212710034040742380
 SpriteRenderer:
