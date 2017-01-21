@@ -2834,11 +2834,11 @@ GameObject:
   - component: {fileID: 2058168555}
   - component: {fileID: 2058168554}
   - component: {fileID: 2058168553}
-  - component: {fileID: 2058168552}
   - component: {fileID: 2058168556}
   - component: {fileID: 2058168558}
   - component: {fileID: 2058168557}
   - component: {fileID: 2058168559}
+  - component: {fileID: 2058168552}
   m_Layer: 9
   m_Name: PlayerDummy
   m_TagString: Player
@@ -2846,8 +2846,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &2058168552
-BoxCollider2D:
+--- !u!70 &2058168552
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -2858,8 +2858,8 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.38999996}
+  m_Size: {x: 0.29999998, y: 0.39}
+  m_Direction: 0
 --- !u!50 &2058168553
 Rigidbody2D:
   serializedVersion: 4
