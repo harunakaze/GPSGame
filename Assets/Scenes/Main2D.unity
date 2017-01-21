@@ -3247,6 +3247,7 @@ MonoBehaviour:
   swPos: {fileID: 1389833857}
   nePos: {fileID: 536950279}
   sePos: {fileID: 1440286326}
+  magazine: 15
 --- !u!114 &2058168558
 MonoBehaviour:
   m_ObjectHideFlags: 0

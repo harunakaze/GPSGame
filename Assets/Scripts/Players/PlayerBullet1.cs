@@ -49,4 +49,9 @@ public class PlayerBullet1 : MonoBehaviour {
 
         Destroy(gameObject);
     }
+
+    void OnBecameInvisible () {
+        Destroy(gameObject);
+    }
+
 }
