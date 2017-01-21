@@ -2015,7 +2015,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1524358580}
   - component: {fileID: 1524358579}
-  - component: {fileID: 1524358578}
   - component: {fileID: 1524358577}
   - component: {fileID: 1524358576}
   - component: {fileID: 1524358575}
@@ -2043,8 +2042,8 @@ MonoBehaviour:
   bulletSadisCount: 40
   buletDelay: 2
   buletShootCount: 18
-  buletWait: 3
-  buletDelayEvery: 2
+  buletWait: 4
+  buletDelayEvery: 3
   satelitDelay: 7
   satelitTime: 25
   satelitBulet: {fileID: 1063209696833136, guid: 52f66818a55265f4082733f3539b500c,
@@ -2084,26 +2083,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.38999996}
---- !u!50 &1524358578
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1524358574}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 3
 --- !u!212 &1524358579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3215,6 +3194,7 @@ GameObject:
   - component: {fileID: 2058168557}
   - component: {fileID: 2058168559}
   - component: {fileID: 2058168552}
+  - component: {fileID: 2058168560}
   m_Layer: 9
   m_Name: PlayerDummy
   m_TagString: Player
@@ -3366,6 +3346,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vspeed: 5
   hspeed: 3
+--- !u!114 &2058168560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2058168551}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602841a77e1e0f042a794bef76b6dece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nw: {fileID: 126344, guid: 614055ba42c8440479945a9c6383bc0b, type: 2}
+  sw: {fileID: 199306, guid: 0360d0af99dd16f4ca0e81d274cc6c96, type: 2}
+  ne: {fileID: 112166, guid: 5163d4c655804014583a243977b4c0b0, type: 2}
+  se: {fileID: 180332, guid: 3e014f90714bd8340bbe0a4dcb942150, type: 2}
+  nwPos: {fileID: 1509756779}
+  swPos: {fileID: 1389833857}
+  nePos: {fileID: 536950279}
+  sePos: {fileID: 1440286326}
+  magazine: 15
+  reload: 15
 --- !u!1 &2095012551
 GameObject:
   m_ObjectHideFlags: 0
