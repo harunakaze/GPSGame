@@ -41,7 +41,7 @@ public class PlayerBullet1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        
     
 	}
     void OnCollisionEnter2D(Collision2D collision)
@@ -50,8 +50,5 @@ public class PlayerBullet1 : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    void OnBecameInvisible () {
-        Destroy(gameObject);
-    }
 
 }
