@@ -13,7 +13,9 @@ public class KidulController : MonoBehaviour {
     // Bulet
     public float buletDelay = 2.0f;
     public int buletShootCount = 18;
-
+    public float buletWait = 2.5f;
+    public int buletDelayEvery;
+    private int buletCounter = 0;
 
     public GameObject bullet;
     public GameObject homingBullet;
@@ -48,6 +50,13 @@ public class KidulController : MonoBehaviour {
 
             Instantiate(homingBullet, transform.position, rotation);
         }
+
+        buletCounter++;
+
+        if(buletCounter >= buletDelayEvery) {
+            CancelInvoke("BuletShoot");
+            StartCoroutine(StartBuletAgain());
+        }
     }
 
     void SadisShoot() {
@@ -72,5 +81,8 @@ public class KidulController : MonoBehaviour {
         StartCoroutine(SadisShootCoroutine());
     }
 
-
+    IEnumerator StartBuletAgain() {
+        yield return new WaitForSeconds(buletWait);
+        InvokeRepeating("BuletShoot", 0.0f, buletDelay);
+    }
 }
