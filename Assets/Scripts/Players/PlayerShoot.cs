@@ -19,19 +19,19 @@ public class PlayerShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Q)) {
+		if (Input.GetKeyDown(KeyCode.I)) {
 		Instantiate (nw, nwPos.position, nwPos.rotation);
 			
 				}
-		if (Input.GetKeyDown(KeyCode.E)) {
+		else if (Input.GetKeyDown(KeyCode.O)) {
 			Instantiate (ne, nePos.position, nePos.rotation);
 			
 		}
-		if (Input.GetKeyDown(KeyCode.C)) {
+		else if (Input.GetKeyDown(KeyCode.L)) {
 			Instantiate (se, sePos.position, sePos.rotation);
 			
 		}
-		if (Input.GetKeyDown(KeyCode.Z)) {
+		else if (Input.GetKeyDown(KeyCode.K)) {
 			Instantiate (sw, swPos.position, swPos.rotation);
 			
 		}
