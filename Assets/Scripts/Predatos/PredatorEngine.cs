@@ -107,4 +107,8 @@ public class PredatorEngine : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         currentState.SOnTriggerEnter(other);
     }
+
+    void OnCollisionEnter2D(Collision2D other) {
+        currentState.SOnCollisionEnter2D(other);
+    }
 }

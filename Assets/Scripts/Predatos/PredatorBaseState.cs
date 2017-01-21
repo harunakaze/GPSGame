@@ -22,4 +22,6 @@ public abstract class PredatorBaseState : MonoBehaviour, IPredatorState {
     public virtual void SOnCollisionEnter(Collision other) { }
 
     public virtual void SOnTriggerEnter(Collider other) { }
+
+    public virtual void SOnCollisionEnter2D(Collision2D other) { }
 }

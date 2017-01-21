@@ -5,6 +5,7 @@ public class AttackState : PredatorBaseState {
 
 
     public float attackSpeed = 0.73f;
+    public int hitPoints = 1;
 
     public PlayerController pc;
     private bool isAttacking = false;
@@ -60,5 +61,19 @@ public class AttackState : PredatorBaseState {
 
         // Reset timer
         timer = 0;
+    }
+
+    public override void SOnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Projectiles")) {
+            hitPoints--;
+
+            if (hitPoints <= 0) {
+                Die();
+            }
+        }
+    }
+
+    void Die() {
+        Destroy(gameObject);
     }
 }
