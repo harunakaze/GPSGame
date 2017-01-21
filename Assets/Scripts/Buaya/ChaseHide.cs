@@ -31,8 +31,6 @@ public class ChaseHide : PredatorBaseState {
         if (Vector2.Distance(player.position, transform.position) <= minBeforeShooting) {
             pEngine.SwitchState<AttackState>();
         }
-
-        Debug.Log("SR : " + sr.color);
     }
 
     public override void SExit() {
