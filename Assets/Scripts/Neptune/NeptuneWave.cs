@@ -6,6 +6,8 @@ public class NeptuneWave : MonoBehaviour {
 
     public int bulletOneCount = 20;
     public int bulletTwoCount = 20;
+    public float shotgunDelay = 2.0f;
+    public float mGunDelay = 2.3f;
     public Transform bulletPlace;
     public GameObject bullet;
 
@@ -14,8 +16,8 @@ public class NeptuneWave : MonoBehaviour {
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        InvokeRepeating("ShootShotgun", 0.1f, 2.0f);
-        InvokeRepeating("MachineGunShoot", 0.3f, 2.3f);
+        InvokeRepeating("ShootShotgun", 0.1f, shotgunDelay);
+        InvokeRepeating("MachineGunShoot", 0.3f, mGunDelay);
     }
 
     private void Update() {

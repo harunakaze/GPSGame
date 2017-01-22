@@ -12,15 +12,16 @@ public class KidulTeleporter : MonoBehaviour {
     private int currentPos = 1;
 
     private void Update() {
-        if(killable.hitPoints <= 32 && currentPos == 1) {
-            killable.hitPoints = 32;
+        if (killable.hitPoints <= 16 && currentPos == 1) {
+            killable.hitPoints = 16;
             transform.position = kidulPlaces2.position;
             currentPos++;
-        } else if(killable.hitPoints <= 16 && currentPos == 2) {
-            killable.hitPoints = 16;
-            transform.position = kidulPlaces3.position;
-            currentPos++;
         }
+        //} else if(killable.hitPoints <= 16 && currentPos == 2) {
+        //    killable.hitPoints = 16;
+        //    transform.position = kidulPlaces3.position;
+        //    currentPos++;
+        //}
     }
 
 }

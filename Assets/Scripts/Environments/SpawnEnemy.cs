@@ -104,7 +104,7 @@ public class SpawnEnemy : MonoBehaviour {
 
     IEnumerator stage4()
     {
-        enemytotal = 18;
+        enemytotal = 16;
         yield return new WaitForSeconds(waved);
 
         while (c > 0)
@@ -114,11 +114,12 @@ public class SpawnEnemy : MonoBehaviour {
             CreateEnemy(m3, sp3);
             if (c==1)
             {
+            //CreateEnemy(m4, sp1);
+            //yield return new WaitForSeconds(waved);
+            //CreateEnemy(m4, sp2);
+            yield return new WaitForSeconds(waved);
+            //CreateEnemy(m4, sp3);
             CreateEnemy(m4, sp1);
-            yield return new WaitForSeconds(waved);
-            CreateEnemy(m4, sp2);
-            yield return new WaitForSeconds(waved);
-            CreateEnemy(m4, sp3);
             }
             yield return new WaitForSeconds(repeatrate);
             c--;

@@ -187,6 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletOneCount: 2
   bulletTwoCount: 20
+  shotgunDelay: 5
+  mGunDelay: 5
   bulletPlace: {fileID: 4065424363513830}
   bullet: {fileID: 1571243209263802, guid: 61679630657dfbc4ca41a124cda7f397, type: 2}
 --- !u!114 &114694152536752572
@@ -211,7 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e255e06f362a94a48b8493595319edbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 7
+  hitPoints: 17
+  isKillable: 1
 --- !u!212 &212605404645026732
 SpriteRenderer:
   m_ObjectHideFlags: 1
