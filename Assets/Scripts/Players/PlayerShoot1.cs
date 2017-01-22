@@ -18,6 +18,9 @@ public class PlayerShoot1 : MonoBehaviour {
 
     public int magazine=15;
     public int reload = 0;
+
+    public AudioClip noAmmo;
+    public AudioClip finishReload;
     // Use this for initialization
     void Start () {
 	    
@@ -47,14 +50,19 @@ public class PlayerShoot1 : MonoBehaviour {
             magazine--;
 			
 		}
+
         if (magazine<=0)
         {
-            if (Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.I)) {
                 reload++;
+                AudioSource.PlayClipAtPoint(noAmmo, transform.position);
+            }
             if (reload>=15)
             {
                 reload = 0;
                 magazine = 15;
+
+                AudioSource.PlayClipAtPoint(finishReload, transform.position);
             }
 
 

@@ -433,7 +433,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 274264709}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 12775fa961355f7488d75822fa96c4f3, type: 3}
@@ -4047,6 +4047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 35
+  getHit: {fileID: 8300000, guid: c5b896065d6263241ba69f5442631194, type: 3}
+  mati: {fileID: 8300000, guid: d64a00e0da1e93741b0f62d9cf936e45, type: 3}
 --- !u!114 &2058168557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4093,6 +4095,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vspeed: 5
   hspeed: 3
+  moveSoundTime: 0.25
+  moveSound: {fileID: 8300000, guid: 1ccda28f6809fe24eafc8f5bb000cb38, type: 3}
 --- !u!114 &2058168560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4115,6 +4119,8 @@ MonoBehaviour:
   sePos: {fileID: 1440286326}
   magazine: 15
   reload: 15
+  noAmmo: {fileID: 8300000, guid: e2ad7dedffbcbec45aed205d5ea328db, type: 3}
+  finishReload: {fileID: 8300000, guid: 5f36bfc6f4ff4df4fb69b2205aec7e60, type: 3}
 --- !u!95 &2058168561
 Animator:
   serializedVersion: 3
@@ -4147,6 +4153,7 @@ MonoBehaviour:
   ar: {fileID: 2058168561}
   normal: {fileID: 21300000, guid: 5b7f499fca4ccb145a875d8087ebe823, type: 3}
   Ser: {fileID: 2058168554}
+  sekarat: {fileID: 8300000, guid: 26b388ffb7689e041a6a5040270cd4b1, type: 3}
 --- !u!1 &2083996716
 GameObject:
   m_ObjectHideFlags: 0

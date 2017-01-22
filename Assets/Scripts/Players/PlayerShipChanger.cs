@@ -9,6 +9,8 @@ public class PlayerShipChanger : MonoBehaviour {
     public Sprite normal;
     public SpriteRenderer Ser;
 
+    public AudioClip sekarat;
+
     void Update() {
         //if(pc.hitPoints >= 20) {
         //    sr.sprite = duaPuluh;
@@ -19,6 +21,7 @@ public class PlayerShipChanger : MonoBehaviour {
         //}
         if(pc.hitPoints <= 15) {
             ar.enabled = true;
+            AudioSource.PlayClipAtPoint(sekarat, transform.position);
         } else {
             ar.enabled = false;
             Ser.sprite = normal;

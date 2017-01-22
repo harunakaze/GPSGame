@@ -13,6 +13,8 @@ public class PlayerBullet1 : MonoBehaviour {
 
     public BulletType type;
 
+    public AudioClip shot;
+
 	private Transform tf;
 	// Use this for initialization
 	void Start () {
@@ -20,24 +22,30 @@ public class PlayerBullet1 : MonoBehaviour {
         if (type == BulletType.NW)
         {
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * speed);
-
+            AudioSource.PlayClipAtPoint(shot, transform.position, 100.0f);
         }
         else if (type == BulletType.NE)
         {
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * speed);
+            AudioSource.PlayClipAtPoint(shot, transform.position);
+
 
         }
         else if (type == BulletType.SE)
         {
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * speed);
+            AudioSource.PlayClipAtPoint(shot, transform.position);
+
 
         }
         else if (type == BulletType.SW)
         {
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * speed);
+            AudioSource.PlayClipAtPoint(shot, transform.position);
+
 
         }
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
