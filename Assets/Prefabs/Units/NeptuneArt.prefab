@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 17
   isKillable: 1
+  art: {fileID: 1423867781655214}
 --- !u!212 &212605404645026732
 SpriteRenderer:
   m_ObjectHideFlags: 1

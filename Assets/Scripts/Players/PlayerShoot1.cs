@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerShoot1 : MonoBehaviour {
+
+    public Text canonText;
+
 	public GameObject nw;
 	public GameObject sw;
 	public GameObject ne;
@@ -52,9 +56,13 @@ public class PlayerShoot1 : MonoBehaviour {
                 reload = 0;
                 magazine = 15;
             }
-        }
-		//		this.transform.position =new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
 
-	}
+
+        }
+        //		this.transform.position =new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+
+
+        canonText.text = magazine + "/15";
+    }
     
 }

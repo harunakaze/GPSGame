@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Projectiles
   - EProj
+  - Neptune
   layers:
   - Default
   - TransparentFX
