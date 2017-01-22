@@ -17,7 +17,7 @@ public class splashscreen : MonoBehaviour {
 
     IEnumerator waitanimation()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3.5f);
         Application.LoadLevel(1);
     }
 }

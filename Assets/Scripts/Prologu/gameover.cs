@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class gameover : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+    public float timer = 10.0f;
+    private float currentTimer = 0.0f;
 	// Update is called once per frame
 	void Update () {
-        if (Input.anyKeyDown)
+        currentTimer += Time.deltaTime;
+
+        if (Input.anyKeyDown && currentTimer >= timer)
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Application.LoadLevel(1);

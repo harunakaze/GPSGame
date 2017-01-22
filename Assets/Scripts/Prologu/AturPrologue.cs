@@ -7,6 +7,8 @@ public class AturPrologue : MonoBehaviour
 
     //public GameObject splash;
     public GameObject menu;
+    public Animator animator;
+    public MenuStuff ms;
 
     [Header("Paragraph")]
     public GameObject par1;
@@ -103,8 +105,11 @@ public class AturPrologue : MonoBehaviour
             if (x == 3)
             {
                 sumber.PlayOneShot(debur3);
-                par3.SetActive(false);
                 menu.SetActive(true);
+                par3.SetActive(false);
+                animator.SetTrigger("Run");
+                ms.isRunning = true;
+                //menu.SetActive(true);
             }
             /*         if (x == 4)
                      {

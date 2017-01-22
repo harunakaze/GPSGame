@@ -13,6 +13,14 @@ public class SpawnEnemy : MonoBehaviour {
     public GameObject m4;
     public GameObject m5;
 
+
+    public AudioSource bgmSS;
+    public AudioClip ss1;
+    public AudioClip ss2;
+    public AudioClip ss3;
+    public AudioClip ss4;
+    public AudioClip ss5;
+
     public int repeatrate;
     public int waved;
 
@@ -65,6 +73,9 @@ public class SpawnEnemy : MonoBehaviour {
 
     IEnumerator stage1()
     {
+        bgmSS.clip = ss1;
+        bgmSS.Play();
+
         enemytotal = 15;
         //15MusuhA
         yield return new WaitForSeconds(3);
@@ -83,6 +94,10 @@ public class SpawnEnemy : MonoBehaviour {
 
     IEnumerator stage2()
     {
+        bgmSS.clip = ss2;
+        bgmSS.Play();
+
+
         enemytotal = 20;
         yield return new WaitForSeconds(waved);
         //10MusuhA + 10MusuhB
@@ -101,6 +116,10 @@ public class SpawnEnemy : MonoBehaviour {
 
     IEnumerator stage3()
     {
+        bgmSS.clip = ss3;
+        bgmSS.Play();
+
+
         enemytotal = 25;
         yield return new WaitForSeconds(waved);
         //5MusuhA + 10MusuhB +10MusuhC
@@ -120,6 +139,9 @@ public class SpawnEnemy : MonoBehaviour {
 
     IEnumerator stage4()
     {
+        bgmSS.clip = ss4;
+        bgmSS.Play();
+
         enemytotal = 16;
         yield return new WaitForSeconds(waved);
 
@@ -145,6 +167,9 @@ public class SpawnEnemy : MonoBehaviour {
 
     IEnumerator stage5()
     {
+        bgmSS.clip = ss5;
+        bgmSS.Play();
+
         //Boss(MusuhE)
         enemytotal = 1;
         yield return new WaitForSeconds(waved);
@@ -181,6 +206,8 @@ public class SpawnEnemy : MonoBehaviour {
             stage++;
             enemydie = 0;
             enemytotal = 0;
+
+            bgmSS.Stop();
         }
     }
 }

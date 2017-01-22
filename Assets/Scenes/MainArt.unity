@@ -1575,6 +1575,12 @@ MonoBehaviour:
   m3: {fileID: 1171341796872336, guid: 264f3e4a487a0f44f81d6b00fe03a553, type: 2}
   m4: {fileID: 1423867781655214, guid: aa73bddb960ab5e4084f99a22a874ab6, type: 2}
   m5: {fileID: 1375329162432068, guid: 86142c97af24bfe439944889afcd6480, type: 2}
+  bgmSS: {fileID: 274264716}
+  ss1: {fileID: 8300000, guid: 1a713b6aa50afb44eb1ec5ff213e2547, type: 3}
+  ss2: {fileID: 8300000, guid: 1a713b6aa50afb44eb1ec5ff213e2547, type: 3}
+  ss3: {fileID: 8300000, guid: 73177f1dc3a037c43a09daf5b0104462, type: 3}
+  ss4: {fileID: 8300000, guid: 73177f1dc3a037c43a09daf5b0104462, type: 3}
+  ss5: {fileID: 8300000, guid: 268ff1e5a5ff009438c4589fbe86afa6, type: 3}
   repeatrate: 3
   waved: 5
   stage: 1
@@ -2679,7 +2685,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1503816414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1a011da623966047ba904a383b886a1, type: 3}
   m_Name: 

@@ -8,10 +8,13 @@ public class AturMenu : MonoBehaviour {
 
     public Button play;
 
-    public void mulai()
-    {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Application.LoadLevel(2);
-        Debug.Log("Mulai");
+    public float timer = 2.0f;
+    private float currentTimer = 0.0f;
+
+    void Update() {
+        //currentTimer += Time.deltaTime;
+
+        //if (Input.anyKeyDown && currentTimer >= timer)
+        //    Application.LoadLevel(2);
     }
 }
