@@ -262,6 +262,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 32
+  isKillable: 1
+  powerUp: {fileID: 1955372102822650, guid: e33ade330173e064f958bc36bbc0438d, type: 2}
+  art: {fileID: 0}
 --- !u!114 &114503107892632032
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,6 +11,10 @@ public class AttackState : PredatorBaseState {
     private bool isAttacking = false;
     private float timer = 0;
 
+    void Start() {
+        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+    }
+
     public override void SEnter() {
         Debug.Log("WWW");
     }

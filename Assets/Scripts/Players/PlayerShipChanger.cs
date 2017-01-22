@@ -6,6 +6,8 @@ public class PlayerShipChanger : MonoBehaviour {
 
     public PlayerController pc;
     public Animator ar;
+    public Sprite normal;
+    public SpriteRenderer Ser;
 
     void Update() {
         //if(pc.hitPoints >= 20) {
@@ -17,6 +19,9 @@ public class PlayerShipChanger : MonoBehaviour {
         //}
         if(pc.hitPoints <= 15) {
             ar.enabled = true;
+        } else {
+            ar.enabled = false;
+            Ser.sprite = normal;
         }
     }
 }

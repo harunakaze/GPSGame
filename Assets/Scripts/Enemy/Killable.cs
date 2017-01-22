@@ -5,6 +5,8 @@ public class Killable : MonoBehaviour {
     public int hitPoints = 1;
     public bool isKillable = true;
 
+    public GameObject powerUp;
+
     public GameObject art;
 
     void OnCollisionEnter2D(Collision2D other) {
@@ -22,7 +24,11 @@ public class Killable : MonoBehaviour {
 
     void Die() {
         if (tag == "Neptune") {
+            Instantiate(powerUp, transform.position, transform.rotation);
             Destroy(art);
+        } else if(tag == "Kidul") {
+            Instantiate(powerUp, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
         else {
             Destroy(gameObject);

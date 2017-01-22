@@ -19,11 +19,27 @@ public class SpawnEnemy : MonoBehaviour {
     int enemytotal = 0;
     int enemydie = 0;
 
-    int stage = 1;
+    public int stage = 1;
     int c = 5;
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(stage1());
+        switch(stage) {
+            case 1:
+                StartCoroutine(stage1());
+                break;
+            case 2:
+                StartCoroutine(stage2());
+                break;
+            case 3:
+                StartCoroutine(stage3());
+                break;
+            case 4:
+                StartCoroutine(stage4());
+                break;
+            case 5:
+                StartCoroutine(stage5());
+                break;
+        }
 	}
 	
 	// Update is called once per frame

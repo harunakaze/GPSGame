@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 95620596464001428}
   m_Layer: 8
   m_Name: Neptune
-  m_TagString: Untagged
+  m_TagString: Neptune
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 17
   isKillable: 1
+  powerUp: {fileID: 1955372102822650, guid: e33ade330173e064f958bc36bbc0438d, type: 2}
   art: {fileID: 1423867781655214}
 --- !u!212 &212605404645026732
 SpriteRenderer:

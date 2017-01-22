@@ -9,6 +9,10 @@ public class SharkController : MonoBehaviour {
     private bool isAttacking = false;
     private float timer = 0;
 
+    void Awake () {
+        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+    }
+
     void Update() {
         // Good old timer
         if(isAttacking) {
