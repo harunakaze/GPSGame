@@ -1368,9 +1368,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.021275746}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.1391449}
 --- !u!4 &807241995
 Transform:
   m_ObjectHideFlags: 0
@@ -1423,9 +1423,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.0017471036}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.1153069}
 --- !u!4 &855157120
 Transform:
   m_ObjectHideFlags: 0
@@ -2910,6 +2910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a011da623966047ba904a383b886a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kp: {fileID: 2058168556}
 --- !u!1 &1509756778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,6 +2995,7 @@ GameObject:
   - component: {fileID: 1524358576}
   - component: {fileID: 1524358575}
   - component: {fileID: 1524358578}
+  - component: {fileID: 1524358581}
   m_Layer: 8
   m_Name: Kidul
   m_TagString: Untagged
@@ -3044,7 +3046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e255e06f362a94a48b8493595319edbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 16
+  hitPoints: 32
 --- !u!61 &1524358577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3118,7 +3120,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1524358574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.02, y: -10.23, z: 0}
+  m_LocalPosition: {x: 17.31, y: 4.86, z: 0}
   m_LocalScale: {x: 3.4256513, y: 4.265296, z: 1}
   m_Children:
   - {fileID: 1295227960}
@@ -3126,6 +3128,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1524358581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524358574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8091fc3add4bec4cbff45392b7ed2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killable: {fileID: 1524358576}
+  kidulPlaces2: {fileID: 204102990}
+  kidulPlaces3: {fileID: 1285822815}
 --- !u!1 &1544987316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,6 +3280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634936668}
   - component: {fileID: 1634936667}
+  - component: {fileID: 1634936669}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -3319,6 +3336,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1634936669
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634936666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 704e22edf721bb94eacebab699d4880b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1640242903
 GameObject:
   m_ObjectHideFlags: 0
