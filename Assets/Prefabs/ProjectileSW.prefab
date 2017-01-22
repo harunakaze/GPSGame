@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 800
   type: 0
-  shot: {fileID: 8300000, guid: 2ea4cb46ccb836248a03532c648da427, type: 3}
+  shot: {fileID: 8300000, guid: fd134650e99e32148841a8e59f47719f, type: 3}
 --- !u!212 &212321857197141434
 SpriteRenderer:
   m_ObjectHideFlags: 1

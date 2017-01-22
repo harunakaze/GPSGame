@@ -10,6 +10,7 @@ public class PlayerShipChanger : MonoBehaviour {
     public SpriteRenderer Ser;
 
     public AudioClip sekarat;
+    private bool isPlayed = false;
 
     void Update() {
         //if(pc.hitPoints >= 20) {
@@ -21,10 +22,15 @@ public class PlayerShipChanger : MonoBehaviour {
         //}
         if(pc.hitPoints <= 15) {
             ar.enabled = true;
-            AudioSource.PlayClipAtPoint(sekarat, transform.position);
+            if(!isPlayed) {
+                AudioSource.PlayClipAtPoint(sekarat, transform.position);
+                isPlayed = true;
+            }
+            
         } else {
             ar.enabled = false;
             Ser.sprite = normal;
+            isPlayed = false;
         }
     }
 }

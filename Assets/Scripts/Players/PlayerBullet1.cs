@@ -14,11 +14,13 @@ public class PlayerBullet1 : MonoBehaviour {
     public BulletType type;
 
     public AudioClip shot;
+    public AudioSource sfxPlayer;
 
 	private Transform tf;
 	// Use this for initialization
 	void Start () {
-		tf = this.transform;
+        sfxPlayer = GameObject.FindGameObjectWithTag("SFXPlayer").GetComponent<AudioSource>();
+        tf = this.transform;
         if (type == BulletType.NW)
         {
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * speed);

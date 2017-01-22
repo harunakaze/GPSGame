@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5fab1bf5e65f1c043aff7ddf8c721580
+timeCreated: 1484986166
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 'SMW2: Yoshi''s Island'
+  fontNames:
+  - 'SMW2: Yoshi''s Island'
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

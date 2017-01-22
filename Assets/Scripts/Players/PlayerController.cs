@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour, IAttackable {
         if(hitPoints <= 0) {
             AudioSource.PlayClipAtPoint(mati, transform.position);
             Destroy(gameObject);
+            Application.LoadLevel(4);
         }
     }
 
