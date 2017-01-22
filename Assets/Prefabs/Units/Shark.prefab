@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86703f0f532eefc46babb6346f91400c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstState: {fileID: 114669935166508756}
+  firstState: {fileID: 114924494825030584}
   predatorData: {fileID: 0}
 --- !u!114 &114924494825030584
 MonoBehaviour:
